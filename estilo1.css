@@ -1,0 +1,122 @@
+/*Para iniciar con CSS conviene normalizar las reglas de CSS, apuntando a todos los elementos con *, incluidos los pseudoselectores ::before y ::after. */
+*, ::before ::after{
+    padding: 0;
+    margin: 0;
+}
+
+/*selector html*/
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, serif;
+    color: linen;
+    background-color: rgb(20, 30, 40);
+}
+
+/*Categorías*/
+h2, h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Categoría 'Referencias'*/
+.section_title.ref{
+    font-family: 'Times New Roman', Georgia, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: linen;
+    font-weight: bold;
+}
+
+#top a:active{
+    background-color: #796349;
+}
+
+/*Sinopsis*/
+#Sinopsis{
+    text-align: center;
+    margin-top: 50px;
+}
+
+/*Necesidades*/
+.section_title.necesidades, .section_text.necesidades{
+    text-align: center;
+}
+
+main{
+    display: grid;
+    grid-template-columns: minmax(2rem, 1fr) minmax(2rem, 1fr);
+    row-gap: 3rem;
+    column-gap: 3rem;
+    text-align: justify;
+
+}
+
+.need_value.main{
+    text-decoration: underline;
+}
+
+.media{
+    position: relative;
+    display: block;
+    margin: auto;
+}
+
+img{
+    width: 50%;
+    object-fit: cover;
+}
+
+.need_value.tiempo{
+    font-family: DS-Digital, LED, Seven-Segment ;
+    margin-bottom: 50px;
+}
+
+.separador:nth-of-type(1){
+    margin-top: 10px;
+}
+
+/*Tecnologias*/
+.subsection{
+    text-indent: 4em;
+    text-align: justify;
+}
+
+.subsection a, .link a{
+    color:blue;
+    text-decoration: underline;
+}
+
+/*Impacto*/
+
+#Impacto{
+    color: #000000;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    display: inline-block;
+    background-color: linen;
+    margin-bottom: 20px;
+}
+
+#Impacto .section_title{
+    margin-bottom: 50px;
+}
+
+#Impacto .section_text{
+    text-align: center;
+    margin: 20px 50px 20px 50px;
+}
+
+@media only screen and (max-width: 720px) {
+    body {
+      background-color: #000000;
+      color: #FFFFFF;
+      grid-template-columns: 1fr;
+    }
+  }
